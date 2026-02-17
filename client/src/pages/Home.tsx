@@ -1,5 +1,6 @@
 import { useAuth } from "@/_core/hooks/useAuth";
 import { Button } from "@/components/ui/button";
+import { Link } from "wouter";
 import { Loader2 } from "lucide-react";
 import { getLoginUrl } from "@/const";
 import { Streamdown } from 'streamdown';
@@ -24,7 +25,9 @@ export default function Home() {
         Example Page
         {/* Example: Streamdown for markdown rendering */}
         <Streamdown>Any **markdown** content</Streamdown>
-        <Button variant="default">Example Button</Button>
+        <Link href="/omega">
+          <Button variant="default" className="mt-4">View Omega Federation Deep-Scan</Button>
+        </Link>
       </main>
     </div>
   );
